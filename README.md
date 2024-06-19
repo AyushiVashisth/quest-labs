@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+<h1 align="center">🚀 Welcome to Quest Labs Website Replication Project 🚀</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
+<h3 align="justify" width="80%">
+Quest Labs Website Replication is a frontend web development project aimed at recreating key sections of the Quest Labs website using React and Tailwind CSS. The project focuses on replicating the Hero Section, Footer, and main body content, adhering closely to the original design and layout.
+</h3>
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+### Frontend Deployed URL 👉 [Click here](https://quest-labs-ten.vercel.app/)
 
-### `npm start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ <h2 align="left">
+<img src="https://art.pixilart.com/486745d4bb1ef18.gif"  width="20" height="20" align="center">
+ Languages and Tools
+<img src="https://art.pixilart.com/486745d4bb1ef18.gif"  width="20" height="20" align="center">
+</h2>
+<div align="center">
+ 
+ <div align="center"><h3 align="center">Frontend</h3>
+<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" align="center" alt="html5">
+<img src = "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" align="center" alt="css3">
+<img src ="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" align="center" alt="javascript">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"  align="center" alt="reactjs" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"  align="center" alt="tailwindcss" />
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center"><h3 align="center">Tools</h3> 
+<img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=#00C7B7" align="center" alt="vercel"/>
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"  align="center" alt="github"/>
+<img src = "https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" align="center" alt="npm">
+<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white"  align="center" alt="vscode"/>
+</div>
+</div>
 
-### `npm test`
+<div align="center"><h3 align="center">Deployed On:</h3>
+  <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=#00C7B7"  alt="vercel"/>
+</div>
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
+# Project Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Hero Section**: Replicating the main hero section of the Quest Labs website, focusing on design, layout, and key elements.
+- **Footer**: Including essential components such as contact information, social media links, and navigation links, mirroring the original design.
+- **Body Content**: Recreating as much of the main content as possible to maintain the structure and design fidelity of the Quest Labs website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Screenshots
 
-### `npm run eject`
+## Desktop 
+![screencapture-quest-labs-ten-vercel-app-2024-06-19-14_07_25](https://github.com/AyushiVashisth/quest-labs/assets/107119119/1c254d15-2852-4668-a6c8-140530575a67)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Mobile
+![screencapture-quest-labs-ten-vercel-app-2024-06-19-14_08_40](https://github.com/AyushiVashisth/quest-labs/assets/107119119/adbcdb35-7d70-43ef-8b5a-a26eb322b405)
+<br/>
+![screencapture-quest-labs-ten-vercel-app-2024-06-19-14_09_36](https://github.com/AyushiVashisth/quest-labs/assets/107119119/69a7983f-4efb-4592-9138-5245301a0719)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js
+- npm
 
-## Learn More
+# Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository to your local machine:
+   ```sh
+   git clone https://github.com/AyushiVashisth/quest-labs-replication
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install the required dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
 
-### Code Splitting
+<br/><br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Submission Details
 
-### Analyzing the Bundle Size
+- **GitHub Repository**: [Link to your repository](https://github.com/AyushiVashisth/quest-labs)
+- **Deployed URL**: [Link to your deployed website](https://quest-labs-ten.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br/><br/>
 
-### Making a Progressive Web App
+# Timelines
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You have 24 hours from the receipt of this document to complete and submit the assignment.
 
-### Advanced Configuration
+<br/><br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `npm run build` fails to minify
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1 align="center">✨ Thank You ✨</h1>
+
+---
+
+Feel free to customize this `README.md` file further based on your specific implementation and preferences. This template provides a structured approach to presenting your project for the Quest Intern Assignment.
