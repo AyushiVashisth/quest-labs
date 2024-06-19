@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import SliderCard from "../components/SliderCard";
 
 const CustomerReviews = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    AOS.refresh();
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -31,6 +38,7 @@ const CustomerReviews = () => {
       }
     ]
   };
+
   const sliderData = [
     {
       profileImage: "https://www.questlabs.ai/assets/lee-3__Hgx2Q.png",
@@ -51,6 +59,7 @@ const CustomerReviews = () => {
       role: "Co-founder"
     }
   ];
+
   return (
     <div className="bg-black text-white py-8">
       <p className="text-center text-[#F6F6F6] text-sm lg:text-base font-bold mb-3">
@@ -64,8 +73,13 @@ const CustomerReviews = () => {
       </div>
       <div className="w-full px-4">
         <Slider {...settings}>
-          {sliderData.map((item) => (
-            <div key={item.role} className="px-2">
+          {sliderData.map((item, index) => (
+            <div
+              key={item.role}
+              className="px-2"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <SliderCard
                 profileImage={item.profileImage}
                 name={item.name}

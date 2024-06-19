@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Layout = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    AOS.refresh();
+  }, []);
+
   return (
     <div
-      div
       className="lg:px-0 px-10 py-16"
       style={{
         background:
@@ -11,19 +17,33 @@ const Layout = () => {
       }}
     >
       <div className="m-auto flex flex-col gap-4 mb-[40px] lg:mb-[80px] py-5">
-        <p className="linearText text-center text-[#F6F6F6] text-[14px] font-bold leading-5 tracking-[0.28px]">
+        <p
+          className="linearText text-center text-[#F6F6F6] text-[14px] font-bold leading-5 tracking-[0.28px]"
+          data-aos="fade-up"
+        >
           FEATURES
         </p>
-        <p className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] font-figtree m-auto">
+        <p
+          className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] font-figtree m-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Robust & Scalable Platform & SDKs
         </p>
-        <p className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto">
+        <p
+          className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Low-Code Dashboard, SDKs & APIs to drive product growth
         </p>
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 w-full m-auto max-w-[1200px] overflow-hidden">
-        <div className="w-full md:w-[42%] relative rounded-[24px] border border-[rgba(201,201,201,0.12)] bg-[#202020] flex flex-col justify-between mb-6 md:mb-0">
+        <div
+          className="w-full md:w-[42%] relative rounded-[24px] border border-[rgba(201,201,201,0.12)] bg-[#202020] flex flex-col justify-between mb-6 md:mb-0"
+          data-aos="fade-right"
+        >
           <img
             src="https://www.questlabs.ai/assets/image1-y7VvY8jh.svg"
             alt=""
@@ -40,7 +60,10 @@ const Layout = () => {
           </div>
         </div>
 
-        <div className="rounded-[24px] border border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-[58%] flex flex-col justify-between ">
+        <div
+          className="rounded-[24px] border border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-[58%] flex flex-col justify-between"
+          data-aos="fade-left"
+        >
           <img
             src="https://www.questlabs.ai/assets/image2-0qa_GPAl.svg"
             alt=""
@@ -59,7 +82,10 @@ const Layout = () => {
       </div>
 
       <div className="w-full max-w-[1200px] m-auto flex flex-col md:flex-row gap-6 mt-6 overflow-hidden">
-        <div className="rounded-3xl border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-1/3">
+        <div
+          className="rounded-3xl border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-1/3"
+          data-aos="fade-up"
+        >
           <img
             src="https://www.questlabs.ai/assets/image3-m-7EaNFv.svg"
             alt=""
@@ -76,7 +102,11 @@ const Layout = () => {
           </div>
         </div>
 
-        <div className="rounded-3xl border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-1/3">
+        <div
+          className="rounded-3xl border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-1/3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <img
             src="https://www.questlabs.ai/assets/image4-HZbCJwM5.svg"
             alt=""
@@ -93,7 +123,11 @@ const Layout = () => {
           </div>
         </div>
 
-        <div className="rounded-3xl border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-1/3">
+        <div
+          className="rounded-3xl border-[rgba(201,201,201,0.12)] bg-[#202020] w-full md:w-1/3"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <img
             src="https://www.questlabs.ai/assets/image5-67XH74ID.svg"
             alt=""

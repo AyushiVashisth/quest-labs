@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Identify = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="lg:py-10 py-8">
-      <div className="m-auto flex flex-col gap-4 lg:pt-10 lg:p-16  p-5 mt-2 lg:mt-30">
-        <p className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] m-auto  w-[80%] lg:w-[50%]">
+      <div className="m-auto flex flex-col gap-4 lg:pt-10 lg:p-16 p-5 mt-2 lg:mt-30">
+        <p
+          className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] m-auto w-[80%] lg:w-[50%]"
+          data-aos="fade-up"
+        >
           Let our AI find the best ways to engage & convert your users
         </p>
-        <p className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto w-[70%]">
+        <p
+          className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto w-[70%]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Generate Personalized In-App Text, Image, UI at Scale for Millions of
           Users without engineering team
         </p>
       </div>
       <div className="lg:pt-10 pt-1 flex flex-col lg:flex-row justify-center items-center">
-        <div className="hidden lg:flex justify-center items-center flex-row">
+        <div
+          className="hidden lg:flex justify-center items-center flex-row"
+          data-aos="fade-right"
+        >
           <div className="w-[575px] relative">
             <img
               src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
@@ -32,10 +49,13 @@ const Identify = () => {
           </div>
         </div>
 
-        <div className="flborder-2 px-10 lg:hidden justify-center flex-col items-center ">
-          <div className="w-full p-5  lg:p-12 relative overflow-hidden">
+        <div
+          className="flex px-10 lg:hidden justify-center flex-col items-center"
+          data-aos="fade-up"
+        >
+          <div className="w-full p-5 lg:p-12 relative overflow-hidden">
             <img
-              src="https://www.questlabs.ai/assets/AiGenerate-JqljUpyB.svg"
+              src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
               alt="AI generated mini-segments"
               className="w-full"
             />
@@ -52,7 +72,10 @@ const Identify = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center lg:flex-row-reverse">
-        <div className="hidden lg:flex justify-center items-center flex-row-reverse mt-16">
+        <div
+          className="hidden lg:flex justify-center items-center flex-row-reverse mt-16"
+          data-aos="fade-left"
+        >
           <div className="w-[575px] relative">
             <img
               src="https://www.questlabs.ai/assets/AiGenerate-JqljUpyB.svg"
@@ -72,8 +95,11 @@ const Identify = () => {
           </div>
         </div>
 
-        <div className="flex px-10 lg:px-0 lg:hidden justify-center flex-col items-center mt-8">
-          <div className="w-full  md:p-12 relative overflow-hidden">
+        <div
+          className="flex px-10 lg:px-0 lg:hidden justify-center flex-col items-center mt-8"
+          data-aos="fade-up"
+        >
+          <div className="w-full md:p-12 relative overflow-hidden">
             <img
               src="https://www.questlabs.ai/assets/AiGenerate-JqljUpyB.svg"
               alt="AI variants for optimizing"
