@@ -2,7 +2,8 @@
 
 <br/>
 <h3 align="justify" width="80%">
-Quest Labs Website Replication is a frontend web development project aimed at recreating key sections of the Quest Labs website using React and Tailwind CSS. The project focuses on replicating the Hero Section, Footer, and main body content, adhering closely to the original design and layout. [Assignment](https://docs.google.com/document/d/1Ro6NluV39jDeCLfflbbE2TzkvLlqdzXzP_o46fiMHcg/edit?usp=sharing)
+Quest Labs Website Replication is a frontend web development project aimed at recreating key sections of the Quest Labs website using React and Tailwind CSS. The project focuses on replicating the Hero Section, Footer, and main body content, adhering closely to the original design and layout. 
+ <br/>
 </h3>
 
 <br/>
@@ -46,6 +47,8 @@ Quest Labs Website Replication is a frontend web development project aimed at re
 - **Hero Section**: Replicating the main hero section of the Quest Labs website, focusing on design, layout, and key elements.
 - **Footer**: Including essential components such as contact information, social media links, and navigation links, mirroring the original design.
 - **Body Content**: Recreating as much of the main content as possible to maintain the structure and design fidelity of the Quest Labs website.
+- [link](https://www.questlabs.ai/)
+- [Assignment](https://docs.google.com/document/d/1Ro6NluV39jDeCLfflbbE2TzkvLlqdzXzP_o46fiMHcg/edit?usp=sharing)
 
 <br/>
 
