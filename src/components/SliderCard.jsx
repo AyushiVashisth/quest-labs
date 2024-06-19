@@ -1,28 +1,26 @@
-import React from 'react';
+import React from "react";
 
 const SliderCard = ({ profileImage, name, role, text, icon }) => {
   return (
-    <div className="w-[726px] bg-[#18171e] border-[#ffffff12] border-[1px] rounded-[16px]">
-      <div className="py-[40px] px-[32px] flex flex-col justify-between h-full">
+    <div className="bg-[#18171e] border-[#ffffff12] border-[1px] rounded-[16px] p-6 lg:p-8">
+      <div className="pb-6 lg:pb-8">
+        <p className="text-sm lg:text-base text-[#D5D4D6] leading-[24px] lg:leading-[28px]">
+          {text}
+        </p>
+      </div>
+      <div className="flex items-center">
+        <img
+          className="w-14 h-14 lg:w-16 lg:h-16 rounded-full mr-4"
+          src={profileImage}
+          alt="Profile"
+        />
         <div>
-          <p className="pb-[32px] font-normal text-[18px] text-[#D5D4D6]">
-            {text}
+          <p className="text-white text-lg lg:text-xl font-normal leading-[24px] lg:leading-[28px]">
+            {name}
           </p>
-        </div>
-        <div className="flex justify-between items-center">
-          <div className="flex gap-[16px]">
-            <div>
-              <img
-                className="w-[56px] h-[56px] rounded-full"
-                src={profileImage}
-                alt="Profile"
-              />
-            </div>
-            <div>
-              <p className="text-[white] text-[20px] font-normal">{name}</p>
-              <p className="text-[#D5D4D6] text-[16px] font-normal">{role}</p>
-            </div>
-          </div>          
+          <p className="text-[#D5D4D6] text-sm lg:text-base font-normal leading-[18px] lg:leading-[20px]">
+            {role}
+          </p>
         </div>
       </div>
     </div>

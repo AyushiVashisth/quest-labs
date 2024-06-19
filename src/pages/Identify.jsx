@@ -2,18 +2,18 @@ import React from "react";
 
 const Identify = () => {
   return (
-    <div className="py-10">
-      <div className="m-auto flex flex-col gap-4 lg:pt-10 pt-16 mt-20">
+    <div className="lg:py-10 py-8">
+      <div className="m-auto flex flex-col gap-4 lg:pt-10 p-16 mt-2 lg:mt-30">
         <p className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] m-auto w-[50%]">
           Let our AI find the best ways to engage & convert your users
         </p>
-        <p className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto">
+        <p className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto w-[70%]">
           Generate Personalized In-App Text, Image, UI at Scale for Millions of
           Users without engineering team
         </p>
       </div>
-      <div className="lg:pt-10 pt-10 flex flex-col lg:flex-row justify-center items-center">
-        <div className="hidden lg:flex justify-center items-center flex-row mt-16">
+      <div className="lg:pt-10 pt-1 flex flex-col lg:flex-row justify-center items-center">
+        <div className="hidden lg:flex justify-center items-center flex-row">
           <div className="w-[575px] relative">
             <img
               src="https://www.questlabs.ai/assets/mini-segment-RCDnplfN.svg"
@@ -32,8 +32,8 @@ const Identify = () => {
           </div>
         </div>
 
-        <div className="flex px-10 lg:px-0 lg:hidden justify-center flex-col items-center">
-          <div className="w-full  md:p-12 relative overflow-hidden">
+        <div className="flborder-2 px-10 lg:hidden justify-center flex-col items-center ">
+          <div className="w-full p-5  lg:p-12 relative overflow-hidden">
             <img
               src="https://www.questlabs.ai/assets/AiGenerate-JqljUpyB.svg"
               alt="AI generated mini-segments"
@@ -51,7 +51,7 @@ const Identify = () => {
           </div>
         </div>
       </div>
-      <div className="lg:pt-10 pt-16 flex flex-col justify-center items-center lg:flex-row-reverse">
+      <div className="flex flex-col justify-center items-center lg:flex-row-reverse">
         <div className="hidden lg:flex justify-center items-center flex-row-reverse mt-16">
           <div className="w-[575px] relative">
             <img

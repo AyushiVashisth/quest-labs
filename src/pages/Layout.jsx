@@ -10,7 +10,7 @@ const Layout = () => {
           "linear-gradient(to right, #4d328b, #000000,#000000,#000000,  #000000,  #000000, #4d328b)"
       }}
     >
-      <div className="m-auto flex flex-col gap-4 mb-[80px] py-5">
+      <div className="m-auto flex flex-col gap-4 mb-[40px] lg:mb-[80px] py-5">
         <p className="linearText text-center text-[#F6F6F6] text-[14px] font-bold leading-5 tracking-[0.28px]">
           FEATURES
         </p>

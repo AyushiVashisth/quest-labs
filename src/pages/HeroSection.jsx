@@ -9,7 +9,7 @@ const HeroSection = () => {
           "linear-gradient(to bottom, #000000,  #000000, #4d328b, #4d328b)"
       }}
     >
-      <div className="flex flex-col gap-7 mt-[136px]">
+      <div className="flex flex-col gap-7 mt-[76px] lg:mt-[136px] ">
         <div style={{ opacity: 1, transform: "none" }}>
           <div
             className="leading-[72px]"

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderCard from "../components/SliderCard";
+
 const CustomerReviews = () => {
   const settings = {
     dots: false,
@@ -11,7 +12,6 @@ const CustomerReviews = () => {
     slidesToShow: 1.9,
     slidesToScroll: 0.05,
     autoplay: true,
-    autoplaySpeed: 1400,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
@@ -51,27 +51,28 @@ const CustomerReviews = () => {
     }
   ];
   return (
-    <div className="sliderCard my-8">
-      <p className="linearText text-center text-[#F6F6F6] font-Figtree text-[14px] font-bold leading-5 tracking-[0.28px] mb-3">
+    <div className="bg-black text-white py-8">
+      <p className="text-center text-[#F6F6F6] text-sm lg:text-base font-bold mb-3">
         CUSTOMER REVIEWS
       </p>
-      <div className="text-center text-white font-figtree text-3xl lg:text-4xl font-medium leading-[46px] tracking-tight lg:w-[468px] w-[350px] m-auto mb-1">
+      <div className="text-center text-white font-figtree text-3xl lg:text-4xl font-medium leading-[46px] tracking-tight max-w-[468px] mx-auto mb-1">
         Don’t take our word for it.
       </div>
-      <div className="text-center text-white font-figtree text-3xl lg:text-4xl font-medium leading-[46px] tracking-tight lg:w-[468px] w-[350px] m-auto mb-14">
+      <div className="text-center text-white font-figtree text-3xl lg:text-4xl font-medium leading-[46px] tracking-tight max-w-[468px] mx-auto mb-14">
         Trust our customers
       </div>
-      <div className="w-full pb-5">
+      <div className="w-full px-4">
         <Slider {...settings}>
           {sliderData.map((item) => (
-            <SliderCard
-              key={item?.role}
-              profileImage={item?.profileImage}
-              name={item?.name}
-              role={item?.role}
-              text={item?.text}
-              icon=""
-            />
+            <div key={item.role} className="px-2">
+              <SliderCard
+                profileImage={item.profileImage}
+                name={item.name}
+                role={item.role}
+                text={item.text}
+                icon=""
+              />
+            </div>
           ))}
         </Slider>
       </div>

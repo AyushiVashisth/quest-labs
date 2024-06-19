@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent bg-opacity-70 py-4 px-6 md:px-12 flex items-center justify-between w-full fixed top-0 z-50 backdrop-blur-lg">
+    <nav className="bg-transparent bg-opacity-70 py-4 px-6 md:px-12 flex items-center justify-between w-full fixed top-0 z-50 backdrop-blur-lg ">
       <div className="flex items-center gap-1 text-white text-lg font-bold">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path
@@ -73,7 +73,7 @@ const Navbar = () => {
         </button>
       </div>
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 text-white py-3 shadow-lg border-t-2 border-gray-700">
+        <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 text-white py-3 shadow-lg border-t-2 border-gray-700 ">
           <ul className="flex flex-col items-center justify-center space-y-3">
             <li className="cursor-pointer">Playbook</li>
             <li className="relative cursor-pointer group">
