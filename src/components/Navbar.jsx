@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent bg-opacity-70 py-4 px-6 md:px-12 flex items-center justify-between w-full fixed top-0 z-50 backdrop-blur-lg ">
+    <nav className="bg-transparent bg-opacity-70 py-4 px-6 md:px-12 flex items-center justify-between w-full fixed top-0 z-50 backdrop-blur-lg">
       <div className="flex items-center gap-1 text-white text-lg font-bold">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path
@@ -40,7 +40,7 @@ const Navbar = () => {
             >
               Resources
               {resourcesOpen && (
-                <ul className="absolute left-0 top-full bg-gray-800 text-white w-48 mt-2 shadow-lg rounded-md space-y-0">
+                <ul className="absolute right-0 top-0 bg-gray-800 text-white w-48 mt-2 shadow-lg rounded-md space-y-0 animate-slideRight">
                   <li className="hover:bg-gray-700 px-3 py-2">Docs</li>
                   <li className="hover:bg-gray-700 px-3 py-2">Newsletter</li>
                   <li className="hover:bg-gray-700 px-3 py-2">
@@ -55,14 +55,6 @@ const Navbar = () => {
           </li>
           <li className="cursor-pointer">Blogs</li>
         </ul>
-        <div className="md:hidden ml-auto">
-          <button
-            className="text-gray-700 focus:outline-none"
-            onClick={toggleMenu}
-          >
-            <FiMenu className="w-8 h-8 absolute right-5 top-3" />
-          </button>
-        </div>
       </div>
       <div className="flex items-center space-x-4">
         <button className="hidden md:block py-2 px-4 rounded transition duration-300 text-white font-semibold text-sm border border-[#8C43EC] cursor-pointer">
@@ -72,41 +64,55 @@ const Navbar = () => {
           Book Demo
         </button>
       </div>
-      {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full text-white py-3 shadow-lg border-gray-300 bg-gray-950 bg-opacity-90 backdrop-blur-lg">
-          <ul className="flex flex-col items-center justify-center space-y-3 ">
-            <li className="cursor-pointer">Playbook</li>
-            <li className="relative cursor-pointer group">
-              <div
-                className="cursor-pointer"
-                onClick={toggleResources}
-                onBlur={() => setResourcesOpen(false)}
-              >
-                Resources
-                {resourcesOpen && (
-                  <ul className="absolute left-0 top-full bg-gray-700 text-white w-48 mt-2 shadow-lg rounded-md text-md">
-                    <li className="hover:bg-gray-600 px-3 py-1">Docs</li>
-                    <li className="hover:bg-gray-600 px-3 py-1">Newsletter</li>
-                    <li className="hover:bg-gray-600 px-3 py-1">
-                      Join Quest Club
-                    </li>
-                    <li className="hover:bg-gray-600 px-3 py-2">
-                      UI Component Figma
-                    </li>
-                  </ul>
-                )}
-              </div>
-            </li>
-            <li className="cursor-pointer">Blogs</li>
-            <button className="py-2 px-4 rounded transition duration-300 text-white font-semibold text-sm border border-[#8C43EC] cursor-pointer">
-              Get Started
-            </button>
-            <button className="bg-gradient-to-left from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded transition duration-300">
-              Book Demo
-            </button>
-          </ul>
-        </div>
-      )}
+      <div className="md:hidden ml-auto">
+        <button
+          className="text-gray-700 focus:outline-none"
+          onClick={toggleMenu}
+        >
+          <FiMenu
+            className={`w-8 h-8 absolute right-5 top-3 transition duration-300 transform ${
+              menuOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      </div>
+      <div
+        className={`md:hidden absolute top-full right-0 w-full text-white py-3 shadow-lg border-gray-300 bg-gray-950 bg-opacity-90 backdrop-blur-lg transform transition-all duration-300 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <ul className="flex flex-col items-center justify-center space-y-3">
+          <li className="cursor-pointer">Playbook</li>
+          <li className="relative cursor-pointer group">
+            <div
+              className="cursor-pointer"
+              onClick={toggleResources}
+              onBlur={() => setResourcesOpen(false)}
+            >
+              Resources
+              {resourcesOpen && (
+                <ul className="absolute right-0 top-0 bg-gray-700 text-white w-48 mt-2 shadow-lg rounded-md text-md">
+                  <li className="hover:bg-gray-600 px-3 py-1">Docs</li>
+                  <li className="hover:bg-gray-600 px-3 py-1">Newsletter</li>
+                  <li className="hover:bg-gray-600 px-3 py-1">
+                    Join Quest Club
+                  </li>
+                  <li className="hover:bg-gray-600 px-3 py-2">
+                    UI Component Figma
+                  </li>
+                </ul>
+              )}
+            </div>
+          </li>
+          <li className="cursor-pointer">Blogs</li>
+          <button className="py-2 px-4 rounded transition duration-300 text-white font-semibold text-sm border border-[#8C43EC] cursor-pointer">
+            Get Started
+          </button>
+          <button className="bg-gradient-to-left from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded transition duration-300">
+            Book Demo
+          </button>
+        </ul>
+      </div>
     </nav>
   );
 };

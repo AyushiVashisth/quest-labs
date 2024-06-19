@@ -14,7 +14,7 @@ const BookCall = () => {
             className="leading-[72px]"
             style={{ opacity: 1, transform: "none" }}
           >
-            <p className="text-[29px] lg:text-[46px] text-[#FFF] text-center leading-[54px] lg:leading-[72px] font-semibold font-figtree w-[458px] md:w-[650px] lg:w-[940px] m-auto">
+            <p className="text-[26px] lg:text-[46px] text-[#FFF] text-center leading-[54px] lg:leading-[72px] font-semibold font-figtree w-[80%] md:w-[90%] lg:w-[60%] m-auto">
               Let's make sure your customers are getting the best experience
               possible
             </p>

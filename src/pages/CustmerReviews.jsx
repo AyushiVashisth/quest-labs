@@ -8,24 +8,25 @@ const CustomerReviews = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1400,
-    slidesToShow: 1.9,
-    slidesToScroll: 0.05,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 0.3,
     autoplay: true,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1.5
+          slidesToShow: 1.9
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1.2
+          slidesToShow: 1.7
         }
       }
     ]
