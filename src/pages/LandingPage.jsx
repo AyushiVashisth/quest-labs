@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import CustomerReviews from "./CustmerReviews";
 import CardComponent from "./CardComponent";
 import { cards } from "../assets/data";
+import BookCall from "./BookCall";
 
 const LandingPage = () => {
   return (
@@ -25,6 +26,7 @@ const LandingPage = () => {
         </div>
       </div>
       <CustomerReviews />
+      <BookCall />
     </div>
   );
 };
