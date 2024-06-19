@@ -15,7 +15,7 @@ const HeroSection = () => {
             className="leading-[72px]"
             style={{ opacity: 1, transform: "none" }}
           >
-            <p className="text-[42px] lg:text-[64px] text-[#FFF] text-center leading-[54px] lg:leading-[72px] font-semibold font-figtree w-[358px] md:w-[650px] lg:w-[940px] m-auto">
+            <p className="text-[32px] lg:text-[64px] text-[#FFF] text-center leading-[54px] lg:leading-[72px] font-semibold font-figtree w-[358px] md:w-[650px] lg:w-[940px] m-auto">
               Transform Your Product with Intelligent In-App Experiences
             </p>
           </div>

@@ -73,8 +73,8 @@ const Navbar = () => {
         </button>
       </div>
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 text-white py-3 shadow-lg border-t-2 border-gray-700 ">
-          <ul className="flex flex-col items-center justify-center space-y-3">
+        <div className="md:hidden absolute top-full left-0 w-full text-white py-3 shadow-lg border-gray-300 bg-gray-950 bg-opacity-90 backdrop-blur-lg">
+          <ul className="flex flex-col items-center justify-center space-y-3 ">
             <li className="cursor-pointer">Playbook</li>
             <li className="relative cursor-pointer group">
               <div

@@ -3,8 +3,8 @@ import React from "react";
 const Identify = () => {
   return (
     <div className="lg:py-10 py-8">
-      <div className="m-auto flex flex-col gap-4 lg:pt-10 p-16 mt-2 lg:mt-30">
-        <p className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] m-auto w-[50%]">
+      <div className="m-auto flex flex-col gap-4 lg:pt-10 lg:p-16  p-5 mt-2 lg:mt-30">
+        <p className="text-white text-center font-medium text-[30px] lg:text-5xl leading-[40px] lg:leading-[56px] -tracking-[0.96px] m-auto  w-[80%] lg:w-[50%]">
           Let our AI find the best ways to engage & convert your users
         </p>
         <p className="text-center text-[14px] lg:text-[18px] font-normal leading-[28px] text-[#B9B9B9] m-auto w-[70%]">
