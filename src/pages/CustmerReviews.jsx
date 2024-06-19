@@ -17,7 +17,7 @@ const CustomerReviews = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 0.3,
+    slidesToScroll: 0.5,
     autoplay: true,
     cssEase: "linear",
     pauseOnHover: true,
